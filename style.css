@@ -1,0 +1,88 @@
+body{
+    padding:0;
+    margin:0;
+    position:absolute;
+    width:100%;
+    background:url(https://i.ibb.co/TTsMHj1/image.png) no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-color:rgba(0,0,0,.75);
+    font-family:montserrat,sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+.center {
+    width: 40%;
+    color: white
+}
+.name {
+    height: 20px;
+    font-size: 399%;
+    width: 40%;
+    text-align: center;
+    color:white
+}
+
+.text {
+    color: white; 
+    font-family: Courier New;
+}
+
+.btn {
+  width: 150px;
+  height: 45px;
+  font-size: 1.1em;
+  border: none;
+  background: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.btn:hover {
+  color: rgb(255, 255, 255);
+}
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(133, 129, 129, 0.096);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn::after {
+  z-index: -2;
+  transition: all 0.4s;
+}
+.btn:hover::before {
+  background: rgba(0, 0, 0, 0.315);
+  border-radius: 10px;
+}
+.btn:hover::after {
+  background: linear-gradient(to right, #6d2fbd, #7b1fd1);
+  border-radius: 10px;
+  transform:  scale(1.07, 1.2) rotateX(0deg);
+}
+
+
+.about_right {
+    display:grid;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.subheading-text {
+    font-size: 28px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
