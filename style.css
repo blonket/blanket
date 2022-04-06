@@ -1,8 +1,4 @@
 body{
-    padding:0;
-    margin:0;
-    position:absolute;
-    width:100%;
     background:url(https://i.ibb.co/TTsMHj1/image.png) no-repeat;
     background-size:cover;
     background-attachment:fixed;
@@ -15,13 +11,11 @@ a {
     color: white
 }
 .center {
-    width: 40%;
-    color: white
+  text-align: center;    
+  color: white
 }
 .name {
-    height: 20px;
-    font-size: 399%;
-    width: 40%;
+    font-size: 60px;
     text-align: center;
     color:white
 }
