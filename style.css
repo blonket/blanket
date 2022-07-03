@@ -1,107 +1,96 @@
-body{
-    background:url(https://i.ibb.co/TTsMHj1/image.png) no-repeat;
-    background-size:cover;
-    background-attachment:fixed;
-    background-color:rgba(0,0,0,.75);
-    font-family:montserrat,sans-serif
-}
 
 html {
-  scroll-behavior:smooth;
+    scroll-behavior:smooth;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 
-audio
-{
--webkit-transition:all 0.5s linear;
--moz-transition:all 0.5s linear;
--o-transition:all 0.5s linear;
-transition:all 0.5s linear;
+.input-what-id {
+    margin-top: 3%;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+    width: 270px;
+    height: 40px;
+    border-bottom: 2px inset #000000;
 }
 
-audio:hover, audio:active
-{
-  -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-  -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-  box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  transform: scale(1.05);
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
-
-
-a {
-    text-decoration: none;
-    color: white
-}
-.center {
-  text-align: center;    
-  color: white
-}
-.name {
-    font-size: 60px;
-    text-align: center;
-    color:white
-}
-
-.text {
-    color: white; 
-    font-family: Courier New;
-}
-
-.btn {
-  width: 150px;
-  height: 45px;
-  font-size: 1.1em;
-  border: none;
-  background: none;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-}
-.btn:hover {
-  color: rgb(255, 255, 255);
-}
-.btn::before,
-.btn::after {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background: rgba(133, 129, 129, 0.096);
-  backdrop-filter: blur(10px);
-  z-index: -1;
-  transition: all 0.4s;
-}
-.btn::after {
-  z-index: -2;
-  transition: all 0.4s;
-}
-.btn:hover::before {
-  background: rgba(0, 0, 0, 0.315);
-  border-radius: 10px;
-}
-.btn:hover::after {
-  background: linear-gradient(to right, #6d2fbd, #7b1fd1);
-  border-radius: 10px;
-  transform:  scale(1.07, 1.2) rotateX(0deg);
-}
-
-
-.about_right {
-    display:grid;
-    flex-flow: row nowrap;
+.wrap {
+    display:flex;
+    justify-content: center;
     align-items: center;
 }
 
-.subheading-text {
-    font-size: 28px;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.true {
+    margin: 0, auto;
+    background-color: #28a745;
+    width: 200px;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: arial;
+    border-radius: 0px 30px 30px 30px;
     text-align: center;
+    position: relative;
+    color: white;
 }
 
+
+.button-29 {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #a1c3f0 0, #9ea6e7 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(126, 85, 214, 0.4) 0 2px 4px,rgba(111, 59, 223, 0.3) 0 7px 13px -3px,rgba(91, 104, 189, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    width: 150px;
+    top: 15%;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+  
+.button-29:focus {
+    box-shadow: #5c78cc 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #6273d4 0 -3px 0 inset;
+}
+  
+.button-29:hover {
+    box-shadow: rgba(84, 60, 138, 0.4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #5d66b3 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+  
+.button-29:active {
+    box-shadow: #4f4f94 0 3px 7px inset;
+    transform: translateY(2px);
+}
